@@ -4,169 +4,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Find sport-specific training in Iowa City at fictional Hawkeye Performance Center. Explore baseball, softball, basketball, soccer, volleyball, and team practice opportunities.">
-  <title>Sport-Specific Training Iowa City | Hawkeye Performance Center</title>
+  <meta name="description" content="Sport-specific training in Iowa City for baseball, softball, basketball, soccer, volleyball, football, and multi-sport athletes.">
+  <title>Sport-Specific Training Iowa City | Hawkeye Performance</title>
   <style>
-    :root { --navy:#142b45; --gold:#f2b544; --light:#f4f6f8; --white:#fff; --text:#253448; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:Arial,Helvetica,sans-serif; line-height:1.65; color:var(--text); }
-    .notice { padding:12px 20px; background:#fff4d9; color:#473718; text-align:center; font-size:.85rem; font-weight:bold; }
-    header { background:var(--navy); color:var(--white); }
-    .nav-wrap { max-width:1120px; margin:auto; padding:18px 24px; display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; }
-    .brand { color:var(--white); text-decoration:none; font-size:1.2rem; font-weight:800; }
-    nav { display:flex; gap:10px 20px; flex-wrap:wrap; }
-    nav a { color:var(--white); text-decoration:none; font-size:.92rem; font-weight:bold; }
-    nav a:hover, nav a:focus { color:var(--gold); }
-    .hero { background:var(--navy); color:var(--white); padding:68px 24px; }
-    .inner { max-width:1050px; margin:auto; }
-    .eyebrow { color:var(--gold); text-transform:uppercase; font-weight:800; font-size:.82rem; letter-spacing:2px; }
-    h1 { font-size:clamp(2.2rem,6vw,3.8rem); line-height:1.12; margin:14px 0 20px; }
-    h2 { color:var(--navy); font-size:clamp(1.6rem,4vw,2.25rem); line-height:1.2; }
-    h3 { color:var(--navy); margin-top:0; }
-    .hero p { max-width:730px; color:#e4ebf2; font-size:1.08rem; }
-    .section { padding:52px 24px; }
-    .alt { background:var(--light); }
-    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; margin-top:25px; }
-    .card { border:1px solid #dce3ea; border-radius:9px; padding:23px; background:white; }
-    .button { display:inline-block; background:var(--gold); color:var(--navy); padding:12px 20px; margin-top:12px; border-radius:5px; text-decoration:none; font-weight:800; }
-    .button:hover { background:#ffd477; }
-    ul { padding-left:22px; }
-    li { margin-bottom:9px; }
-    .callout { background:var(--light); padding:26px; border-left:5px solid var(--gold); border-radius:5px; }
-    footer { background:#0c1d30; color:#e4ebf2; padding:32px 24px; }
-    footer p { margin:10px 0; }
-    footer a { color:var(--gold); }
-    .footer-notice { margin-top:25px; padding-top:18px; border-top:1px solid #526174; font-size:.85rem; }
-    @media(max-width:760px) {
-      .nav-wrap { padding:16px 20px; }
-      nav { width:100%; gap:10px 16px; }
-      nav a { font-size:.88rem; }
-      .hero { padding:48px 20px; }
-      .section { padding:38px 20px; }
-      .grid { grid-template-columns:1fr; }
-    }
+    :root{--bg:#101512;--panel:#191f1a;--lime:#c5ff35;--orange:#ff783f;--white:#f7f9f5;--muted:#b1bbb2;--line:#353d35}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.65}a{color:inherit}
+    .notice{background:var(--lime);color:#101512;padding:10px 18px;text-align:center;font-size:.78rem;font-weight:700;line-height:1.5}header{background:var(--bg);border-bottom:1px solid var(--line)}
+    .nav-wrap{max-width:1200px;margin:auto;padding:19px 25px;display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:900;font-size:1rem;line-height:1.15}.brand-mark{display:grid;place-items:center;width:38px;height:38px;background:var(--lime);color:var(--bg);font-size:1.35rem;font-weight:1000;transform:skew(-8deg)}.brand small{display:block;color:var(--lime);font-size:.63rem;letter-spacing:2px;margin-top:4px}
+    nav{display:flex;flex-wrap:wrap;gap:9px 21px}nav a{color:#d9e0d8;text-decoration:none;font-size:.81rem;font-weight:800;text-transform:uppercase}nav a:hover,nav a[aria-current=page]{color:var(--lime)}
+    .inner{width:min(1120px,100%);margin:auto;position:relative;z-index:1}.hero{background:radial-gradient(ellipse at 90% 30%,#344322 0%,transparent 38%),linear-gradient(125deg,#101512 35%,#1b2418 100%);padding:82px 25px 75px;border-bottom:1px solid var(--line)}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--lime);text-transform:uppercase;font-weight:900;font-size:.77rem;letter-spacing:2px}.eyebrow:before{content:"";width:24px;height:3px;background:var(--orange)}
+    h1,h2,h3{margin-top:0;text-transform:uppercase;font-weight:1000}h1{font-size:clamp(3rem,8vw,6.2rem);line-height:.96;letter-spacing:-.07em;max-width:950px;margin:24px 0}h1 span{color:var(--lime)}h2{font-size:clamp(2rem,5vw,3.2rem);line-height:1.08;letter-spacing:-.05em;margin:14px 0 20px}h3{font-size:1.2rem;line-height:1.2}
+    .hero p{max-width:720px;color:#d0d8d0;font-size:1.08rem}.btn{display:inline-flex;align-items:center;gap:12px;background:var(--lime);color:var(--bg);padding:14px 20px;margin-top:12px;font-weight:900;font-size:.83rem;text-decoration:none;text-transform:uppercase;border:2px solid var(--lime)}.btn:hover{background:#dcff8c}
+    .section{padding:70px 25px}.alt{background:#171d18}.lead{max-width:800px;color:var(--muted);font-size:1.02rem}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px}
+    .card{background:var(--panel);border:1px solid var(--line);padding:26px;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:var(--lime)}.number{color:var(--lime);font-size:.8rem;font-weight:1000;letter-spacing:2px}.card h3{margin-top:20px}.card p{color:var(--muted);font-size:.94rem}
+    .sport-code{display:inline-block;background:var(--lime);color:var(--bg);padding:5px 9px;font-weight:1000;font-size:.75rem;letter-spacing:1px}.feature{border-left:4px solid var(--orange);padding:17px 20px;background:var(--panel);margin:12px 0}.feature strong{display:block;color:var(--lime);text-transform:uppercase}.feature span{color:var(--muted);font-size:.92rem}
+    .callout{background:var(--lime);color:var(--bg);padding:35px}.callout h2{color:var(--bg)}.callout p{max-width:780px}.callout .btn{background:var(--bg);color:var(--lime);border-color:var(--bg)}
+    footer{padding:35px 25px 24px;background:#090c0a;border-top:1px solid var(--line)}.footer-inner{max-width:1120px;margin:auto}.footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}footer p{color:var(--muted);font-size:.85rem}footer nav{margin:20px 0}footer nav a{font-size:.75rem}.footer-notice{border-top:1px solid var(--line);margin-top:24px;padding-top:18px;color:#dce4d9;font-size:.8rem}
+    @media(max-width:800px){.nav-wrap{padding:16px 20px}nav{width:100%;gap:12px 16px}.hero{padding:60px 20px}.section{padding:48px 20px}.grid{grid-template-columns:1fr}}
+    @media(max-width:440px){.notice{font-size:.7rem}h1{font-size:3rem}.btn{width:100%;justify-content:center}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
   </style>
 </head>
 <body>
   <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
-
-  <header>
-    <div class="nav-wrap">
-      <a class="brand" href="index.html">HAWKEYE PERFORMANCE CENTER</a>
-      <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="sports-performance.html">Sports Performance</a>
-        <a href="sport-specific.html" aria-current="page">Sport-Specific Training</a>
-        <a href="strength-conditioning.html">Strength &amp; Conditioning</a>
-      </nav>
-    </div>
-  </header>
-
+  <header><div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">H</span><span>HAWKEYE PERFORMANCE<small>TRAIN BEYOND LIMITS</small></span></a>
+    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="sports-performance.html">Performance</a><a href="sport-specific.html" aria-current="page">Sport-Specific</a><a href="strength-conditioning.html">Strength + Conditioning</a></nav>
+  </div></header>
   <main>
-    <section class="hero">
-      <div class="inner">
-        <span class="eyebrow">Sport-Specific Training · Iowa City</span>
-        <h1>Practice your sport. Prepare for the moments that matter.</h1>
-        <p>Hawkeye Performance Center is a fictional indoor destination for sport-specific training and team practices in Iowa City. Athletes can work on sport-related fundamentals, repeat key drills, and develop confidence in a dedicated indoor environment.</p>
-        <p>From youth teams learning the basics to experienced competitors refining their technique, our training concept makes room for focused practice throughout the year.</p>
-        <a class="button" href="#sports">Explore Training by Sport</a>
+    <section class="hero"><div class="inner">
+      <span class="eyebrow">Sport-Specific Training · Iowa City</span>
+      <h1>Own your reps.<br><span>Own your game.</span></h1>
+      <p>More touches. Better technique. Sharper decisions. Our fictional indoor training hub gives Iowa City athletes and teams a place to focus on the details that make a difference when it's time to compete.</p>
+      <a class="btn" href="#sports">Find Your Sport ↗</a>
+    </div></section>
+    <section class="section"><div class="inner">
+      <span class="eyebrow">Practice with purpose</span><h2>Every rep has a reason.</h2>
+      <p class="lead">Sport-specific training breaks skills down into focused drills that help athletes practice technique, build confidence, and work toward clear goals. Fictional sport development coordinator Maya Bennett helps athletes and coaches plan sessions around their sport, experience, and priorities.</p>
+      <div class="grid">
+        <article class="card"><span class="number">01 / REFINE</span><h3>Skill Development</h3><p>Focus on individual techniques and repeat key movements with instruction and constructive feedback.</p></article>
+        <article class="card"><span class="number">02 / CONNECT</span><h3>Team Practice</h3><p>Bring teammates together for organized drills, group activities, and practice routines.</p></article>
+        <article class="card"><span class="number">03 / PREPARE</span><h3>Season Readiness</h3><p>Use preseason and offseason sessions to revisit fundamentals and prepare for upcoming competition.</p></article>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="inner">
-        <span class="eyebrow">Practice with purpose</span>
-        <h2>Build confidence through repetition.</h2>
-        <p>Sport-specific training focuses on the skills, movements, and decisions associated with an athlete's sport. Sessions can be tailored to individual needs, team priorities, and different stages of development.</p>
-        <p>Our fictional sport development coordinator, Maya Bennett, works with athletes and coaches to shape practice sessions around clear objectives. The goal is to create a supportive space where athletes can learn, repeat, and refine their skills without the distractions of a full competition environment.</p>
-        <div class="grid">
-          <article class="card">
-            <h3>Skill Development</h3>
-            <p>Break down key techniques into manageable drills, with instruction and feedback that match the athlete's experience.</p>
-          </article>
-          <article class="card">
-            <h3>Team Practice</h3>
-            <p>Coordinate group drills, practice routines, and team preparation in an indoor facility designed for shared training.</p>
-          </article>
-          <article class="card">
-            <h3>Season Preparation</h3>
-            <p>Use preseason and offseason sessions to revisit fundamentals, reinforce habits, and prepare for upcoming competition.</p>
-          </article>
-        </div>
+    </div></section>
+    <section class="section alt" id="sports"><div class="inner">
+      <span class="eyebrow">Find your game</span><h2>Different sports. Same drive.</h2>
+      <div class="grid">
+        <article class="card"><span class="sport-code">BASEBALL / SOFTBALL</span><h3>Built for the Diamond</h3><p>Practice throwing mechanics, fielding footwork, defensive reactions, hitting movement patterns, and position-specific drills. Space and equipment needs are reviewed when planning sessions.</p></article>
+        <article class="card"><span class="sport-code">BASKETBALL</span><h3>Ready for the Court</h3><p>Work on ball handling, passing, shooting fundamentals, footwork, defensive movement, and small-group skill drills.</p></article>
+        <article class="card"><span class="sport-code">SOCCER</span><h3>Control the Play</h3><p>Develop close control, passing technique, first touch, coordination, and movement through individual or team-based drills.</p></article>
+        <article class="card"><span class="sport-code">VOLLEYBALL</span><h3>Make Every Touch Count</h3><p>Focus on passing, setting, approach footwork, reaction drills, and coordinated activities adapted to the available indoor space.</p></article>
+        <article class="card"><span class="sport-code">FOOTBALL</span><h3>Win the Details</h3><p>Practice position-specific footwork, route technique, agility patterns, and team movement drills with organized instruction.</p></article>
+        <article class="card"><span class="sport-code">MULTI-SPORT</span><h3>Build Your Foundation</h3><p>Develop coordination, movement confidence, and athletic fundamentals for young athletes exploring different sports.</p></article>
       </div>
-    </section>
-
-    <section class="section alt" id="sports">
-      <div class="inner">
-        <span class="eyebrow">Training possibilities</span>
-        <h2>Space to work on your game.</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Baseball &amp; Softball</h3>
-            <p>Work on throwing mechanics, fielding footwork, defensive reactions, hitting movement patterns, and position-specific drills. Equipment and space requirements are discussed when planning a session.</p>
-          </article>
-          <article class="card">
-            <h3>Basketball</h3>
-            <p>Practice ball handling, passing, shooting fundamentals, footwork, defensive movement, and small-group skill drills in a structured setting.</p>
-          </article>
-          <article class="card">
-            <h3>Soccer</h3>
-            <p>Develop close control, passing technique, first touch, coordination, and movement patterns through individual or team-based activities.</p>
-          </article>
-          <article class="card">
-            <h3>Volleyball</h3>
-            <p>Focus on passing, setting, approach footwork, reaction drills, and coordinated team activities adapted to available indoor space.</p>
-          </article>
-          <article class="card">
-            <h3>Football</h3>
-            <p>Practice position-specific footwork, route technique, agility patterns, and team movement drills with an emphasis on safe, organized instruction.</p>
-          </article>
-          <article class="card">
-            <h3>Multi-Sport Development</h3>
-            <p>Build general coordination, movement confidence, and fundamental athletic skills for young athletes exploring different sports.</p>
-          </article>
-        </div>
-        <p><strong>Planning note:</strong> Activities depend on available space, equipment, age group, and facility scheduling. Coaches discuss these needs before arranging a team session.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="inner">
-        <span class="eyebrow">For teams and coaches</span>
-        <h2>Your practice, organized around your priorities.</h2>
-        <p>Indoor practice space can be especially useful when weather, field availability, or busy team schedules make outdoor training difficult. Hawkeye Performance Center is designed as a central place for athletes and coaches to plan repeatable sessions.</p>
-        <ul>
-          <li><strong>Team sessions:</strong> Organize a shared practice around drills and objectives chosen by the coach.</li>
-          <li><strong>Small-group development:</strong> Give athletes more opportunities to repeat specific skills.</li>
-          <li><strong>Individual practice:</strong> Focus on personal technique and areas for improvement.</li>
-          <li><strong>Offseason preparation:</strong> Maintain a regular practice routine between competitive seasons.</li>
-        </ul>
-        <div class="callout">
-          <h3>Every athlete starts somewhere.</h3>
-          <p>Our fictional facility welcomes beginners who are learning foundational skills as well as experienced athletes seeking more focused practice. Training goals and drills are adjusted to the participant's age, ability, and sport.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="inner">
-        <span class="eyebrow">Build a complete training plan</span>
-        <h2>Combine sport skills with athletic development.</h2>
-        <p>Sport-specific practice is one part of athlete development. Pairing technical work with general performance training and strength and conditioning can help athletes build a more complete approach to preparation.</p>
-        <a class="button" href="sports-performance.html">Sports Performance Training</a>
-        <a class="button" href="strength-conditioning.html">Strength &amp; Conditioning</a>
-      </div>
-    </section>
+      <p class="lead" style="margin-top:24px">Training activities depend on the facility's available space, equipment, age group, and schedule. Coaches discuss requirements before planning a session.</p>
+    </div></section>
+    <section class="section"><div class="inner">
+      <span class="eyebrow">For coaches + teams</span><h2>Your practice. Your priorities.</h2>
+      <p class="lead">When weather, field availability, or busy schedules interrupt the plan, indoor practice space can help teams stay organized. Hawkeye Performance Center is designed to bring athletes and coaches together for focused work throughout the year.</p>
+      <div class="feature"><strong>Team sessions</strong><span>Organize practice around shared goals and drills selected by the coach.</span></div>
+      <div class="feature"><strong>Small-group development</strong><span>Create more opportunities for athletes to repeat specific skills.</span></div>
+      <div class="feature"><strong>Individual practice</strong><span>Set aside time for personal technique and targeted improvement.</span></div>
+      <div class="feature"><strong>Offseason preparation</strong><span>Maintain a regular practice routine between competitive seasons.</span></div>
+    </div></section>
+    <section class="section alt"><div class="inner"><div class="callout">
+      <span class="eyebrow" style="color:#101512">The next level takes work</span><h2>Train your skills. Build your engine.</h2><p>Pair focused practice with sports performance training and strength and conditioning to build a more complete athletic development plan.</p>
+      <a class="btn" href="sports-performance.html">Build Your Edge ↗</a> <a class="btn" href="strength-conditioning.html">Get Stronger ↗</a>
+    </div></div></section>
   </main>
-
-  <footer>
-    <div class="inner">
-      <strong>Hawkeye Performance Center</strong>
-      <p>Fictional indoor athletic training facility · Iowa City, Iowa</p>
-      <p><a href="index.html">Home</a> · <a href="sports-performance.html">Sports Performance</a> · <a href="sport-specific.html">Sport-Specific Training</a> · <a href="strength-conditioning.html">Strength &amp; Conditioning</a></p>
-      <p>All facility details, staff, and services on this website are fictional and created for a class project.</p>
-      <div class="footer-notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
-    </div>
-  </footer>
+  <footer><div class="footer-inner">
+    <div class="footer-top"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>HAWKEYE PERFORMANCE<small>TRAIN BEYOND LIMITS</small></span></a><p>Fictional indoor athletic training concept<br>Iowa City, Iowa</p></div>
+    <nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="sports-performance.html">Performance</a><a href="sport-specific.html">Sport-Specific</a><a href="strength-conditioning.html">Strength + Conditioning</a></nav>
+    <p>All facility details, staff, and services are fictional and created for a class project.</p>
+    <div class="footer-notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+  </div></footer>
 </body>
 </html>
