@@ -1,12 +1,266 @@
-Peak Performance Academy
-Home
-Sports Performance Training
-Sport Specific Training
-Strength & Conditioning
-Welcome to Peak Performance Academy
-Your go-to hub for athletes and teams of all ages in Iowa City. Our state-of-the-art facility offers the best indoor practices and conditioning for all sports.
 
-Our Mission
-At Peak Performance Academy, we strive to help every athlete reach their full potential through tailored training programs, expert coaching, and a supportive environment.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Hawkeye Performance Center, an indoor athletic training facility in Iowa City for athletes, teams, sports performance, and year-round conditioning.">
+  <title>Hawkeye Performance Center | Iowa City Athletic Training</title>
+  <style>
+    :root {
+      --navy: #142b45;
+      --gold: #f2b544;
+      --light: #f4f6f8;
+      --white: #ffffff;
+      --text: #253448;
+      --muted: #5c6b7b;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--white);
+    }
+    .notice {
+      padding: 12px 20px;
+      background: #fff4d9;
+      color: #473718;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+    header { background: var(--navy); color: var(--white); }
+    .nav-wrap {
+      max-width: 1120px;
+      margin: auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+    }
+    nav { display: flex; gap: 10px 20px; flex-wrap: wrap; }
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: bold;
+    }
+    nav a:hover, nav a:focus { color: var(--gold); }
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 76px 24px 84px;
+    }
+    .hero-inner, .section-inner, .footer-inner {
+      max-width: 1050px;
+      margin: auto;
+    }
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 0.82rem;
+      letter-spacing: 2px;
+    }
+    h1 { font-size: clamp(2.3rem, 6vw, 4.2rem); line-height: 1.1; margin: 14px 0 20px; }
+    h2 { color: var(--navy); font-size: clamp(1.65rem, 4vw, 2.3rem); line-height: 1.2; }
+    h3 { color: var(--navy); margin-top: 0; }
+    .hero p { max-width: 670px; font-size: 1.1rem; color: #e4ebf2; }
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 12px 20px;
+      margin-top: 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 800;
+    }
+    .button:hover { background: #ffd477; }
+    .section { padding: 55px 24px; }
+    .section.alt { background: var(--light); }
+    .intro { max-width: 760px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+    }
+    .card {
+      background: var(--white);
+      border: 1px solid #dce3ea;
+      border-radius: 9px;
+      padding: 24px;
+      box-shadow: 0 4px 14px rgba(20, 43, 69, 0.05);
+    }
+    .card p { margin-bottom: 10px; }
+    .card a { color: #174f80; font-weight: bold; }
+    .number {
+      display: inline-block;
+      color: var(--navy);
+      background: var(--gold);
+      border-radius: 5px;
+      padding: 5px 11px;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+    .feature-list { padding-left: 22px; }
+    .feature-list li { margin-bottom: 9px; }
+    .callout {
+      padding: 30px;
+      border-left: 5px solid var(--gold);
+      background: var(--light);
+      border-radius: 5px;
+    }
+    footer { background: #0c1d30; color: #e4ebf2; padding: 32px 24px; }
+    footer p { margin: 10px 0; }
+    footer a { color: var(--gold); }
+    .footer-notice {
+      margin-top: 25px;
+      padding-top: 18px;
+      border-top: 1px solid #526174;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 760px) {
+      .nav-wrap { padding: 16px 20px; }
+      nav { width: 100%; gap: 10px 16px; }
+      nav a { font-size: 0.88rem; }
+      .hero { padding: 54px 22px 60px; }
+      .section { padding: 40px 20px; }
+      .grid { grid-template-columns: 1fr; }
+      .card { padding: 21px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
 
-This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
+  <header>
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">HAWKEYE PERFORMANCE CENTER</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="sports-performance.html">Sports Performance</a>
+        <a href="sport-specific.html">Sport-Specific Training</a>
+        <a href="strength-conditioning.html">Strength &amp; Conditioning</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="eyebrow">Train together. Compete with confidence.</span>
+        <h1>Your next level starts here.</h1>
+        <p>Hawkeye Performance Center is a fictional indoor athletic training facility in Iowa City built for athletes, teams, and coaches who want space to practice, improve, and prepare for competition in every season.</p>
+        <p>From team practices and sport-specific skill development to strength training and conditioning, our concept brings athletic development together under one roof.</p>
+        <a class="button" href="sports-performance.html">Explore Training Options</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner intro">
+        <span class="eyebrow">Welcome to HPC</span>
+        <h2>One facility. More ways to get better.</h2>
+        <p>Finding reliable indoor practice space can be a challenge for athletes and teams, especially when Iowa weather changes the plan. Hawkeye Performance Center is designed to make training more convenient by combining open practice areas, performance coaching, and conditioning opportunities in one accessible location.</p>
+        <p>We welcome developing youth athletes, high school competitors, college athletes, recreational teams, and coaches looking for a consistent place to work toward their goals.</p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="section-inner">
+        <span class="eyebrow">How we help you improve</span>
+        <h2>Find your training focus.</h2>
+        <div class="grid">
+          <article class="card">
+            <span class="number">01</span>
+            <h3>Sports Performance Training</h3>
+            <p>Build speed, agility, balance, coordination, and overall athletic readiness through structured, goal-oriented sessions.</p>
+            <a href="sports-performance.html">Explore sports performance →</a>
+          </article>
+          <article class="card">
+            <span class="number">02</span>
+            <h3>Sport-Specific Training</h3>
+            <p>Develop sport-related skills with focused drills, individual practice, small-group sessions, and team training opportunities.</p>
+            <a href="sport-specific.html">Explore sport-specific training →</a>
+          </article>
+          <article class="card">
+            <span class="number">03</span>
+            <h3>Strength &amp; Conditioning</h3>
+            <p>Work on strength, power, mobility, endurance, and movement quality with training suited to an athlete's experience and goals.</p>
+            <a href="strength-conditioning.html">Explore strength &amp; conditioning →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <span class="eyebrow">Built for the whole team</span>
+        <h2>A training home for every stage of the game.</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Youth Athletes</h3>
+            <p>Learn movement fundamentals, practice skills, and build confidence in a positive, age-conscious training environment.</p>
+          </article>
+          <article class="card">
+            <h3>High School &amp; College Athletes</h3>
+            <p>Use structured sessions to prepare for tryouts, refine technique, and stay consistent during the competitive season.</p>
+          </article>
+          <article class="card">
+            <h3>Teams &amp; Coaches</h3>
+            <p>Bring teammates together for indoor practices, position-based drills, preseason preparation, and team conditioning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="section-inner">
+        <div class="callout">
+          <span class="eyebrow">Our approach</span>
+          <h2>Progress is a team effort.</h2>
+          <p>Our fictional coaching team, led by performance director Jordan Ellis, believes great training starts with clear goals, consistent effort, and a supportive environment. Sessions are designed around the athlete or team's experience, priorities, and schedule.</p>
+          <ul class="feature-list">
+            <li>Training plans shaped around individual and team goals</li>
+            <li>Indoor space for practices, drills, and athletic development</li>
+            <li>Options for individuals, small groups, and full teams</li>
+            <li>A welcoming environment for different ages and experience levels</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <span class="eyebrow">Start planning</span>
+        <h2>Make room for your next season.</h2>
+        <p>Whether you're an athlete looking for a focused training routine or a coach planning indoor practices, start by exploring the service that best fits your goals.</p>
+        <a class="button" href="sport-specific.html">Find Your Training Focus</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <strong>Hawkeye Performance Center</strong>
+      <p>Fictional indoor athletic training facility · Iowa City, Iowa</p>
+      <p>Explore: <a href="index.html">Home</a> · <a href="sports-performance.html">Sports Performance</a> · <a href="sport-specific.html">Sport-Specific Training</a> · <a href="strength-conditioning.html">Strength &amp; Conditioning</a></p>
+      <p>All facility details, staff, and services on this website are fictional and created for a class project.</p>
+      <div class="footer-notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+    </div>
+  </footer>
+</body>
+</html>
