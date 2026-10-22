@@ -1,79 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sports performance training in Iowa City for athletes looking to improve speed, agility, coordination, power, and movement.">
-  <title>Sports Performance Training Iowa City | Hawkeye Performance</title>
-  <style>
-    :root{--bg:#101512;--panel:#191f1a;--lime:#c5ff35;--orange:#ff783f;--white:#f7f9f5;--muted:#b1bbb2;--line:#353d35}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.65}a{color:inherit}
-    .notice{background:var(--lime);color:#101512;padding:10px 18px;text-align:center;font-size:.78rem;font-weight:700;line-height:1.5}header{background:var(--bg);border-bottom:1px solid var(--line)}
-    .nav-wrap{max-width:1200px;margin:auto;padding:19px 25px;display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}
-    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:900;font-size:1rem;line-height:1.15}.brand-mark{display:grid;place-items:center;width:38px;height:38px;background:var(--lime);color:var(--bg);font-size:1.35rem;font-weight:1000;transform:skew(-8deg)}.brand small{display:block;color:var(--lime);font-size:.63rem;letter-spacing:2px;margin-top:4px}
-    nav{display:flex;flex-wrap:wrap;gap:9px 21px}nav a{color:#d9e0d8;text-decoration:none;font-size:.81rem;font-weight:800;text-transform:uppercase}nav a:hover,nav a[aria-current=page]{color:var(--lime)}
-    .inner{width:min(1120px,100%);margin:auto;position:relative;z-index:1}.hero{background:radial-gradient(ellipse at 90% 30%,#344322 0%,transparent 38%),linear-gradient(125deg,#101512 35%,#1b2418 100%);padding:82px 25px 75px;border-bottom:1px solid var(--line)}
-    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--lime);text-transform:uppercase;font-weight:900;font-size:.77rem;letter-spacing:2px}.eyebrow:before{content:"";width:24px;height:3px;background:var(--orange)}
-    h1,h2,h3{margin-top:0;text-transform:uppercase;font-weight:1000}h1{font-size:clamp(3rem,8vw,6.2rem);line-height:.96;letter-spacing:-.07em;max-width:950px;margin:24px 0}h1 span{color:var(--lime)}h2{font-size:clamp(2rem,5vw,3.2rem);line-height:1.08;letter-spacing:-.05em;margin:14px 0 20px}h3{font-size:1.2rem;line-height:1.2}
-    .hero p{max-width:720px;color:#d0d8d0;font-size:1.08rem}.btn{display:inline-flex;align-items:center;gap:12px;background:var(--lime);color:var(--bg);padding:14px 20px;margin-top:12px;font-weight:900;font-size:.83rem;text-decoration:none;text-transform:uppercase;border:2px solid var(--lime)}.btn:hover{background:#dcff8c}
-    .section{padding:70px 25px}.alt{background:#171d18}.lead{max-width:800px;color:var(--muted);font-size:1.02rem}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px}
-    .card{background:var(--panel);border:1px solid var(--line);padding:26px;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:var(--lime)}.number{color:var(--lime);font-size:.8rem;font-weight:1000;letter-spacing:2px}.card h3{margin-top:20px}.card p{color:var(--muted);font-size:.94rem}
-    .feature{border-left:4px solid var(--orange);padding:17px 20px;background:var(--panel);margin:12px 0}.feature strong{display:block;color:var(--lime);text-transform:uppercase}.feature span{color:var(--muted);font-size:.92rem}
-    .callout{background:var(--lime);color:var(--bg);padding:35px}.callout h2{color:var(--bg)}.callout p{max-width:780px}.callout .btn{background:var(--bg);color:var(--lime);border-color:var(--bg)}
-    footer{padding:35px 25px 24px;background:#090c0a;border-top:1px solid var(--line)}.footer-inner{max-width:1120px;margin:auto}.footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}footer p{color:var(--muted);font-size:.85rem}footer nav{margin:20px 0}footer nav a{font-size:.75rem}.footer-notice{border-top:1px solid var(--line);margin-top:24px;padding-top:18px;color:#dce4d9;font-size:.8rem}
-    @media(max-width:800px){.nav-wrap{padding:16px 20px}nav{width:100%;gap:12px 16px}.hero{padding:60px 20px}.section{padding:48px 20px}.grid{grid-template-columns:1fr}}
-    @media(max-width:440px){.notice{font-size:.7rem}h1{font-size:3rem}.btn{width:100%;justify-content:center}}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Performance | Hawkeye Performance</title>
+<style>
+:root{--bg:#101512;--panel:#19221d;--text:#f5f7f2;--muted:#b9c4bc;--accent:#ff783f;--line:rgba(255,255,255,.13)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+.notice{padding:10px 5%;background:#f4f4ef;color:#182019;font-size:.78rem;text-align:center;font-weight:bold}
+header{background:#101512;border-bottom:1px solid var(--line)}
+.nav{max-width:1200px;margin:auto;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.brand{text-decoration:none;font-weight:900;letter-spacing:.08em;font-size:1.05rem;line-height:1.1}
+.brand span{display:block;color:var(--accent);font-size:.68rem;letter-spacing:.2em;margin-top:5px}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{padding:10px 12px;border-radius:6px;text-decoration:none;color:var(--muted);font-size:.83rem;font-weight:bold}
+nav a:hover,nav a[aria-current=page]{background:var(--accent);color:#101512}
+.wrap{max-width:1200px;margin:auto;padding:0 5%}
+.eyebrow{color:var(--accent);font-size:.75rem;font-weight:900;letter-spacing:.2em;text-transform:uppercase}
+h1{font-size:clamp(3rem,7vw,6.3rem);line-height:.91;letter-spacing:-.065em;text-transform:uppercase;margin:20px 0}
+h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1;text-transform:uppercase;letter-spacing:-.04em}
+h3{text-transform:uppercase;line-height:1.1}
+p{color:var(--muted)}
+.lead{font-size:1.12rem;max-width:760px}
+.page-intro{padding:65px 0 45px;border-bottom:1px solid var(--line)}
+.page-tag{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:7px 11px;border-radius:4px;font-size:.75rem;text-transform:uppercase;font-weight:900;letter-spacing:.12em}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.stat{padding:22px;border-left:3px solid var(--accent);background:var(--panel)}
+.stat strong{display:block;font-size:1.65rem;color:var(--accent);line-height:1.1}
+.stat span{display:block;color:var(--muted);font-size:.8rem;margin-top:7px}
+.section{padding:75px 0}
+.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:start}
+.btn{display:inline-block;margin-top:15px;padding:14px 18px;border-radius:5px;background:var(--accent);color:#101512;text-decoration:none;font-size:.8rem;font-weight:900;text-transform:uppercase}
+.feature-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.feature-list li{padding:18px 0;border-bottom:1px solid var(--line);display:flex;gap:16px}
+.feature-list b{color:var(--accent);min-width:34px}
+.feature-list h3{margin:0 0 7px}
+.feature-list p{margin:0}
+.cta{padding:45px;border-radius:16px;background:var(--accent);color:#101512;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.cta h2{max-width:700px}
+.cta p{color:#253020}
+.cta .btn{background:#101512;color:white;white-space:nowrap}
+footer{padding:35px 5%;margin-top:50px;border-top:1px solid var(--line)}
+.footer-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+footer p{font-size:.78rem;max-width:650px}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}.page-intro{padding:48px 0 35px}.stats,.split{grid-template-columns:1fr}.section{padding:50px 0}.cta{align-items:flex-start;flex-direction:column;padding:28px}h1{font-size:clamp(3rem,13vw,5.5rem)}}
+</style>
 </head>
 <body>
-  <div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
-  <header><div class="nav-wrap">
-    <a class="brand" href="index.html"><span class="brand-mark">H</span><span>HAWKEYE PERFORMANCE<small>TRAIN BEYOND LIMITS</small></span></a>
-    <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="sports-performance.html" aria-current="page">Performance</a><a href="sport-specific.html">Sport-Specific</a><a href="strength-conditioning.html">Strength + Conditioning</a></nav>
-  </div></header>
-  <main>
-    <section class="hero"><div class="inner">
-      <span class="eyebrow">Sports Performance Training · Iowa City</span>
-      <h1>Built to move.<br><span>Ready to compete.</span></h1>
-      <p>Speed. Agility. Power. Control. Sports performance training helps athletes build the physical skills that carry across their game. At our fictional Iowa City training facility, every rep has a reason and every session starts with a goal.</p>
-      <a class="btn" href="#programs">Explore Performance ↗</a>
-    </div></section>
-    <section class="section"><div class="inner">
-      <span class="eyebrow">Get an edge</span><h2>Train the athlete. Elevate the game.</h2>
-      <p class="lead">Sports performance training focuses on movement skills that matter across sports, helping athletes practice with purpose and develop at a pace that fits their experience. Fictional performance director Jordan Ellis leads the coaching concept with an emphasis on technique, consistency, and measurable goals.</p>
-      <div class="grid">
-        <article class="card"><span class="number">01 / EXPLODE</span><h3>Speed + Acceleration</h3><p>Practice starting mechanics, running form, and controlled acceleration to support faster, more efficient movement.</p></article>
-        <article class="card"><span class="number">02 / REACT</span><h3>Agility + Direction</h3><p>Build body control, deceleration, balance, and change-of-direction skills through guided movement drills.</p></article>
-        <article class="card"><span class="number">03 / CONTROL</span><h3>Coordination + Power</h3><p>Develop timing, body awareness, and explosive movement through appropriate drills and coached progressions.</p></article>
-      </div>
-    </div></section>
-    <section class="section alt" id="programs"><div class="inner">
-      <span class="eyebrow">Find your format</span><h2>Your goals. Your game plan.</h2>
-      <div class="grid">
-        <article class="card"><span class="number">01</span><h3>One-on-One Performance</h3><p>Focused coaching time to work on personal movement goals, technique, and areas for improvement.</p><p><strong>Best for:</strong> Athletes who want individual feedback and a tailored focus.</p></article>
-        <article class="card"><span class="number">02</span><h3>Small-Group Training</h3><p>Structured drills with teammates or friends that combine coaching, effort, and friendly competition.</p><p><strong>Best for:</strong> Athletes who enjoy learning and improving together.</p></article>
-        <article class="card"><span class="number">03</span><h3>Team Performance</h3><p>Coordinated sessions for warm-ups, movement drills, and shared team performance priorities.</p><p><strong>Best for:</strong> Coaches planning preseason or in-season development.</p></article>
-      </div>
-    </div></section>
-    <section class="section"><div class="inner">
-      <span class="eyebrow">The game plan</span><h2>Show up with a goal. Leave with a plan.</h2>
-      <div class="feature"><strong>01. Set your target.</strong><span>Discuss your sport, experience, schedule, and the areas you want to develop.</span></div>
-      <div class="feature"><strong>02. Establish your starting point.</strong><span>Review current movement skills and training priorities with a coach.</span></div>
-      <div class="feature"><strong>03. Train with purpose.</strong><span>Work through structured drills with clear instruction and feedback.</span></div>
-      <div class="feature"><strong>04. Keep progressing.</strong><span>Revisit your goals and adjust your training focus as you develop.</span></div>
-    </div></section>
-    <section class="section alt"><div class="inner"><div class="callout">
-      <span class="eyebrow" style="color:#101512">Your next rep starts here</span><h2>Don't wait for game day to get better.</h2><p>Explore sport-specific training for focused skill work, or strength and conditioning for a more structured physical development plan.</p>
-      <a class="btn" href="sport-specific.html">Own Your Game ↗</a> <a class="btn" href="strength-conditioning.html">Build Your Base ↗</a>
-    </div></div></section>
-  </main>
-  <footer><div class="footer-inner">
-    <div class="footer-top"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>HAWKEYE PERFORMANCE<small>TRAIN BEYOND LIMITS</small></span></a><p>Fictional indoor athletic training concept<br>Iowa City, Iowa</p></div>
-    <nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="sports-performance.html">Performance</a><a href="sport-specific.html">Sport-Specific</a><a href="strength-conditioning.html">Strength + Conditioning</a></nav>
-    <p>All facility details, staff, and services are fictional and created for a class project.</p>
-    <div class="footer-notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
-  </div></footer>
+<div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+<header><div class="nav">
+<a class="brand" href="index.html">HAWKEYE<br>PERFORMANCE<span>TRAIN BEYOND LIMITS</span></a>
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="sports-performance.html" aria-current="page">Sports Performance</a>
+<a href="sport-specific.html">Sport-Specific</a>
+<a href="strength-conditioning.html">Strength & Conditioning</a>
+</nav>
+</div></header>
+<main>
+<section class="page-intro"><div class="wrap">
+<span class="page-tag">01 · Speed / Power / Agility</span>
+<h1>Make your<br>next move count<span style="color:var(--accent)">.</span></h1>
+<p class="lead">Sports performance training focuses on the athletic qualities that help you accelerate, change direction, jump, and produce power—so your preparation has purpose.</p>
+<div class="stats">
+<div class="stat"><strong>01</strong><span>Move with control</span></div>
+<div class="stat"><strong>02</strong><span>Build explosive power</span></div>
+<div class="stat"><strong>03</strong><span>Track your progress</span></div>
+</div>
+</div></section>
+<section class="section"><div class="wrap split">
+<div><div class="eyebrow">The performance plan</div><h2>Train the qualities behind the play.</h2><p>Every athlete has a different starting point. Sessions can emphasize movement mechanics, speed development, jumping and landing, or agility based on individual goals.</p><a class="btn" href="sport-specific.html">Pair it with your sport ↗</a></div>
+<ul class="feature-list">
+<li><b>01</b><div><h3>Speed mechanics</h3><p>Practice efficient starts, acceleration positions, and running technique.</p></div></li>
+<li><b>02</b><div><h3>Power development</h3><p>Build coordination and explosiveness through intentional jumping and power work.</p></div></li>
+<li><b>03</b><div><h3>Change of direction</h3><p>Work on braking, balance, and re-acceleration in controlled drills.</p></div></li>
+<li><b>04</b><div><h3>Progress check-ins</h3><p>Use clear goals and repeatable benchmarks to help guide training focus.</p></div></li>
+</ul>
+</div></section>
+<section class="section"><div class="wrap cta"><div><div class="eyebrow" style="color:#182019">Ready to raise your ceiling?</div><h2>Build the tools your sport demands.</h2><p>Explore how sport-specific sessions can complement your performance work.</p></div><a class="btn" href="sport-specific.html">Explore sport training ↗</a></div></section>
+</main>
+<footer><div class="footer-inner"><a class="brand" href="index.html">HAWKEYE PERFORMANCE<span>TRAIN BEYOND LIMITS</span></a><p>Built for athletes who want to move with purpose. Iowa City, Iowa.<br>This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p></div></footer>
 </body>
 </html>
