@@ -1,90 +1,141 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home | Hawkeye Performance</title>
-<style>
-:root{--bg:#101512;--panel:#19221d;--text:#f5f7f2;--muted:#b9c4bc;--accent:#c5ff35;--line:rgba(255,255,255,.13)}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
-a{color:inherit}
-.notice{padding:10px 5%;background:#f4f4ef;color:#182019;font-size:.78rem;text-align:center;font-weight:bold}
-header{background:#101512;border-bottom:1px solid var(--line)}
-.nav{max-width:1200px;margin:auto;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;gap:20px}
-.brand{text-decoration:none;font-weight:900;letter-spacing:.08em;font-size:1.05rem;line-height:1.1}
-.brand span{display:block;color:var(--accent);font-size:.68rem;letter-spacing:.2em;margin-top:5px}
-nav{display:flex;gap:6px;flex-wrap:wrap}
-nav a{padding:10px 12px;border-radius:6px;text-decoration:none;color:var(--muted);font-size:.83rem;font-weight:bold}
-nav a:hover,nav a[aria-current=page]{background:var(--accent);color:#101512}
-.wrap{max-width:1200px;margin:auto;padding:0 5%}
-.hero{padding:80px 0}
-.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
-.eyebrow{color:var(--accent);font-size:.75rem;font-weight:900;letter-spacing:.2em;text-transform:uppercase}
-h1{font-size:clamp(3.3rem,8vw,7.4rem);line-height:.91;letter-spacing:-.065em;text-transform:uppercase;margin:20px 0}
-h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1;text-transform:uppercase;letter-spacing:-.04em}
-h3{text-transform:uppercase;line-height:1.1}
-p{color:var(--muted)}
-.lead{font-size:1.12rem;max-width:650px}
-.btn{display:inline-block;margin:12px 8px 0 0;padding:14px 18px;border-radius:5px;background:var(--accent);color:#101512;text-decoration:none;font-size:.8rem;font-weight:900;text-transform:uppercase}
-.btn.outline{background:transparent;border:1px solid var(--line);color:var(--text)}
-.hero-art{min-height:330px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#35451c,#111612 70%);position:relative;overflow:hidden;padding:24px;display:flex;align-items:flex-end}
-.hero-art:before{content:"";position:absolute;width:270px;height:270px;border:38px solid var(--accent);border-radius:50%;right:-45px;top:-40px}
-.hero-art:after{content:"HP";position:absolute;right:15px;bottom:-15px;font-size:12rem;font-weight:900;color:rgba(255,255,255,.08);letter-spacing:-.1em}
-.art-label{position:relative;z-index:1;font-weight:900;letter-spacing:.15em;text-transform:uppercase}
-.band{background:#19221d;border-block:1px solid var(--line);padding:22px 0}
-.band-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.band strong{color:var(--accent);text-transform:uppercase}
-.section{padding:75px 0}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px}
-.section-head p{max-width:430px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:25px;min-height:240px;display:flex;flex-direction:column;align-items:flex-start}
-.num{color:var(--accent);font-size:.8rem;font-weight:900;letter-spacing:.14em}
-.card a{margin-top:auto;padding-top:18px;color:var(--accent);text-decoration:none;font-weight:900}
-.cta{padding:45px;border-radius:16px;background:var(--accent);color:#101512;display:flex;justify-content:space-between;align-items:center;gap:25px}
-.cta h2{max-width:700px}
-.cta p{color:#253020}
-.cta .btn{background:#101512;color:white}
-footer{padding:35px 5%;margin-top:50px;border-top:1px solid var(--line)}
-.footer-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
-footer p{font-size:.78rem;max-width:650px}
-@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}.hero-grid{grid-template-columns:1fr}.hero{padding:50px 0}.hero-art{min-height:220px}.cards{grid-template-columns:1fr}.section{padding:50px 0}.section-head,.cta{align-items:flex-start;flex-direction:column}.cta{padding:28px}h1{font-size:clamp(3rem,15vw,5.5rem)}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover athletic performance training at Hawkeye Performance in Iowa City.">
+  <title>Hawkeye Performance | Train With Purpose</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<div class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
-<header><div class="nav">
-<a class="brand" href="index.html">HAWKEYE<br>PERFORMANCE<span>TRAIN BEYOND LIMITS</span></a>
-<nav aria-label="Main navigation">
-<a href="index.html" aria-current="page">Home</a>
-<a href="sports-performance.html">Sports Performance</a>
-<a href="sport-specific.html">Sport-Specific</a>
-<a href="strength-conditioning.html">Strength & Conditioning</a>
-</nav>
-</div></header>
-<main>
-<section class="hero"><div class="wrap hero-grid">
-<div>
-<div class="eyebrow">Iowa City · Athlete development</div>
-<h1>Earn your<br>next level<span style="color:var(--accent)">.</span></h1>
-<p class="lead">Training isn't just what you do in the gym. It's how you prepare, compete, and come back stronger. Find the training path built around your goals.</p>
-<a class="btn" href="sports-performance.html">Explore training ↗</a>
-<a class="btn outline" href="sport-specific.html">Find your sport</a>
-</div>
-<div class="hero-art"><div class="art-label">Show up focused.<br>Leave stronger.</div></div>
-</div></section>
-<section class="band"><div class="wrap band-inner"><strong>Move with purpose</strong><strong>Build your edge</strong><strong>Compete with confidence</strong></div></section>
-<section class="section"><div class="wrap">
-<div class="section-head"><div><div class="eyebrow">Choose your focus</div><h2>One goal.<br>Your next step.</h2></div><p>Start with the outcome you want. Each program has a different focus, but all are built around purposeful practice and steady progress.</p></div>
-<div class="cards">
-<article class="card"><div class="num">01 / SPEED + POWER</div><h3>Sports Performance</h3><p>Build acceleration, explosiveness, agility, and the physical tools that support game-day performance.</p><a href="sports-performance.html">Explore performance ↗</a></article>
-<article class="card"><div class="num">02 / YOUR GAME</div><h3>Sport-Specific Training</h3><p>Practice movement patterns and physical demands shaped around the sport you play.</p><a href="sport-specific.html">Train for your sport ↗</a></article>
-<article class="card"><div class="num">03 / FOUNDATION</div><h3>Strength & Conditioning</h3><p>Develop strength, movement quality, work capacity, and a base you can keep building on.</p><a href="strength-conditioning.html">Build your foundation ↗</a></article>
-</div></div></section>
-<section class="section"><div class="wrap cta"><div><div class="eyebrow" style="color:#182019">Your work starts here</div><h2>Train with intention.<br>Compete with confidence.</h2><p>Explore the program that matches your next goal.</p></div><a class="btn" href="sports-performance.html">Find your focus ↗</a></div></section>
-</main>
-<footer><div class="footer-inner"><a class="brand" href="index.html">HAWKEYE PERFORMANCE<span>TRAIN BEYOND LIMITS</span></a><p>Built for athletes who want to move with purpose. Iowa City, Iowa.<br>This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p></div></footer>
+<body class="lime">
+  <div class="notice">
+    This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
+  </div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="logo" href="index.html" aria-label="Hawkeye Performance home">
+        <span class="logo-mark" aria-hidden="true">ϟ</span>
+        <span class="logo-text">
+          <strong>HAWKEYE</strong>
+          <span>PERFORMANCE</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="sports-performance.html">Sports Performance</a>
+        <a href="sport-specific.html">Sport-Specific</a>
+        <a href="strength-conditioning.html">Strength &amp; Conditioning</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Iowa City · Built to Compete</p>
+        <h1>Earn your <span class="accent-text">next level.</span></h1>
+        <p class="hero-copy">
+          Training should have a purpose. Build strength, develop your skills,
+          and prepare to show up with confidence when it matters most.
+        </p>
+        <div class="button-row">
+          <a class="button" href="sports-performance.html">Explore Programs</a>
+          <a class="button secondary" href="#our-approach">Our Approach</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="our-approach">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">The Hawkeye Approach</p>
+          <h2>Built around <span class="accent-text">your goals.</span></h2>
+          <p>
+            Every athlete starts somewhere. Our training pathways are designed
+            to help athletes work toward their goals with focused practice,
+            progressive development, and a commitment to improvement.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="card-number">01 / PERFORMANCE</div>
+            <h3>Sports Performance</h3>
+            <p>Develop speed, power, agility, and the confidence to compete.</p>
+            <a class="card-link" href="sports-performance.html">Explore Performance →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-number">02 / YOUR SPORT</div>
+            <h3>Sport-Specific Training</h3>
+            <p>Focus your training on the movements and demands of your sport.</p>
+            <a class="card-link" href="sport-specific.html">Find Your Focus →</a>
+          </article>
+
+          <article class="card">
+            <div class="card-number">03 / YOUR FOUNDATION</div>
+            <h3>Strength &amp; Conditioning</h3>
+            <p>Build a stronger foundation through structured, progressive work.</p>
+            <a class="card-link" href="strength-conditioning.html">Build Strength →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Progress With Purpose</p>
+          <h2>Show up. Put in the work. <span class="accent-text">Keep improving.</span></h2>
+        </div>
+        <div class="feature-list">
+          <div class="feature">
+            <h3>Train with intention</h3>
+            <p>Know what you're working on and why it matters.</p>
+          </div>
+          <div class="feature">
+            <h3>Build consistency</h3>
+            <p>Focus on repeatable habits that support long-term progress.</p>
+          </div>
+          <div class="feature">
+            <h3>Measure your growth</h3>
+            <p>Use goals and feedback to keep moving forward.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <p class="eyebrow">Your Next Chapter Starts Here</p>
+          <h2>Ready to get to work?</h2>
+          <p>Explore the training options and find the pathway that best fits your goals.</p>
+          <div class="button-row">
+            <a class="button" href="sports-performance.html">View Training Programs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="logo" href="index.html" aria-label="Hawkeye Performance home">
+        <span class="logo-mark" aria-hidden="true">ϟ</span>
+        <span class="logo-text">
+          <strong>HAWKEYE</strong>
+          <span>PERFORMANCE</span>
+        </span>
+      </a>
+      <p>This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p>
+      <div class="footer-links">
+        <a href="sports-performance.html">Sports Performance</a>
+        <a href="sport-specific.html">Sport-Specific</a>
+        <a href="strength-conditioning.html">Strength &amp; Conditioning</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
