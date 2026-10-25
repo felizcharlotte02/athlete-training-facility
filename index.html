@@ -1,141 +1,259 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover athletic performance training at Hawkeye Performance in Iowa City.">
-  <title>Hawkeye Performance | Train With Purpose</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Athlete Training Facility in Iowa City | Hawkeye Performance</title>
+  <meta name="description" content="Explore Hawkeye Performance, a fictional Iowa City athletic training facility offering sports performance, sport-specific training, and strength and conditioning.">
+  <style>
+    :root{--bg:#101216;--panel:#191d24;--text:#f5f7fa;--muted:#aab2bf;--line:#343b47;--accent:#c5ff35}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:100px}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .notice{text-align:center;background:#252a32;padding:9px 5%;font-size:12px;color:#e0e5ed}
+    header{position:sticky;top:0;z-index:5;background:#101216f5;border-bottom:1px solid var(--line)}
+    nav{max-width:1100px;margin:auto;padding:16px 5%;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+    .brand{font-weight:900;letter-spacing:1px}
+    .mark{display:inline-grid;place-items:center;background:var(--accent);color:#101216;border-radius:8px;width:38px;height:38px;margin-right:8px;font-size:23px}
+    .links{display:flex;flex-wrap:wrap;gap:17px;font-size:13px;font-weight:bold}
+    .links a:hover{color:var(--accent)}
+    .container{width:min(1100px,90%);margin:auto}
+    .hero{padding:85px 0 65px;background:radial-gradient(ellipse at 85% 10%,#c5ff3520,transparent 50%)}
+    .eyebrow{color:var(--accent);text-transform:uppercase;font-size:12px;font-weight:900;letter-spacing:3px}
+    h1{font-size:clamp(40px,7vw,76px);line-height:1.03;letter-spacing:-2px;margin:18px 0}
+    h2{font-size:clamp(27px,4vw,40px);line-height:1.15}
+    h3{margin-top:0}
+    p{color:var(--muted)}
+    .hero p{max-width:680px;font-size:18px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+    .button{display:inline-block;padding:12px 18px;border:1px solid var(--accent);border-radius:8px;background:var(--accent);color:#101216;font-weight:bold;cursor:pointer}
+    .secondary{background:transparent;color:var(--text);border-color:var(--line)}
+    section{padding:60px 0}
+    .heading{max-width:700px;margin-bottom:28px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px}
+    .tag{color:var(--accent);font-size:12px;font-weight:bold}
+    .price{font-size:30px;color:var(--accent);font-weight:900;margin:12px 0}
+    .price small{font-size:13px;color:var(--muted);font-weight:normal}
+    ul{padding-left:20px;color:var(--muted)}
+    li{margin-bottom:8px}
+    .booking{background:#151920;border-block:1px solid var(--line)}
+    .formgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field{display:flex;flex-direction:column;gap:6px}
+    .full{grid-column:1/-1}
+    label{font-size:13px;font-weight:bold}
+    input,select,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;background:#101318;color:var(--text);font:inherit}
+    textarea{min-height:100px;resize:vertical}
+    input:focus,select:focus,textarea:focus{outline:2px solid var(--accent)}
+    .note{font-size:12px}
+    footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+    @media(max-width:760px){.grid,.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.hero{padding-top:55px}nav{align-items:flex-start}.links{gap:12px}}
+  </style>
 </head>
-<body class="lime">
-  <div class="notice">
-    This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
-  </div>
+<body>
+  <div class="notice">Fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. Not a real business.</div>
 
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a class="logo" href="index.html" aria-label="Hawkeye Performance home">
-        <span class="logo-mark" aria-hidden="true">ϟ</span>
-        <span class="logo-text">
-          <strong>HAWKEYE</strong>
-          <span>PERFORMANCE</span>
-        </span>
-      </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html" aria-current="page">Home</a>
+  <header>
+    <nav>
+      <a class="brand" href="index.html"><span class="mark">ϟ</span> HAWKEYE PERFORMANCE</a>
+      <div class="links">
+        <a href="index.html">Home</a>
         <a href="sports-performance.html">Sports Performance</a>
         <a href="sport-specific.html">Sport-Specific</a>
-        <a href="strength-conditioning.html">Strength &amp; Conditioning</a>
-      </nav>
-    </div>
+        <a href="strength-conditioning.html">Strength & Conditioning</a>
+        <a href="#booking">Book a Session</a>
+      </div>
+    </nav>
   </header>
 
   <main>
     <section class="hero">
       <div class="container">
-        <p class="eyebrow">Iowa City · Built to Compete</p>
-        <h1>Earn your <span class="accent-text">next level.</span></h1>
-        <p class="hero-copy">
-          Training should have a purpose. Build strength, develop your skills,
-          and prepare to show up with confidence when it matters most.
-        </p>
-        <div class="button-row">
-          <a class="button" href="sports-performance.html">Explore Programs</a>
-          <a class="button secondary" href="#our-approach">Our Approach</a>
+        <div class="eyebrow">Train with purpose</div>
+        <h1>BUILD YOUR GAME.<br><span style="color:var(--accent)">ELEVATE YOUR PERFORMANCE.</span></h1>
+        <p>Hawkeye Performance is a fictional athletic training facility concept in Iowa City designed around athletic development, sport-specific movement, strength, and confidence.</p>
+        <div class="actions">
+          <a class="button" href="#pricing">Explore Pricing</a>
+          <a class="button secondary" href="#booking">Request a Session</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="our-approach">
+    <section>
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">The Hawkeye Approach</p>
-          <h2>Built around <span class="accent-text">your goals.</span></h2>
-          <p>
-            Every athlete starts somewhere. Our training pathways are designed
-            to help athletes work toward their goals with focused practice,
-            progressive development, and a commitment to improvement.
-          </p>
+        <div class="heading">
+          <div class="eyebrow">Find your focus</div>
+          <h2>Training built around your goals.</h2>
+          <p>Explore training options and choose a path that fits your sport, experience, and goals.</p>
         </div>
-
         <div class="grid">
           <article class="card">
-            <div class="card-number">01 / PERFORMANCE</div>
+            <span class="tag">01 / ATHLETIC DEVELOPMENT</span>
             <h3>Sports Performance</h3>
-            <p>Develop speed, power, agility, and the confidence to compete.</p>
-            <a class="card-link" href="sports-performance.html">Explore Performance →</a>
+            <p>Develop acceleration, agility, coordination, and power through purposeful athletic training.</p>
+            <a class="button secondary" href="sports-performance.html">Explore Training</a>
           </article>
-
           <article class="card">
-            <div class="card-number">02 / YOUR SPORT</div>
+            <span class="tag">02 / YOUR SPORT</span>
             <h3>Sport-Specific Training</h3>
-            <p>Focus your training on the movements and demands of your sport.</p>
-            <a class="card-link" href="sport-specific.html">Find Your Focus →</a>
+            <p>Explore movement and drills designed around the demands of your sport.</p>
+            <a class="button secondary" href="sport-specific.html">Find Your Sport</a>
           </article>
-
           <article class="card">
-            <div class="card-number">03 / YOUR FOUNDATION</div>
-            <h3>Strength &amp; Conditioning</h3>
-            <p>Build a stronger foundation through structured, progressive work.</p>
-            <a class="card-link" href="strength-conditioning.html">Build Strength →</a>
+            <span class="tag">03 / BUILD YOUR BASE</span>
+            <h3>Strength & Conditioning</h3>
+            <p>Build strength and improve movement technique with progressive training.</p>
+            <a class="button secondary" href="strength-conditioning.html">Build Strength</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Progress With Purpose</p>
-          <h2>Show up. Put in the work. <span class="accent-text">Keep improving.</span></h2>
+    <section id="pricing">
+      <div class="container">
+        <div class="heading">
+          <div class="eyebrow">Transparent sample pricing</div>
+          <h2>Choose your training.</h2>
+          <p>Sample prices for this fictional project. Session availability is not real.</p>
         </div>
-        <div class="feature-list">
-          <div class="feature">
-            <h3>Train with intention</h3>
-            <p>Know what you're working on and why it matters.</p>
-          </div>
-          <div class="feature">
-            <h3>Build consistency</h3>
-            <p>Focus on repeatable habits that support long-term progress.</p>
-          </div>
-          <div class="feature">
-            <h3>Measure your growth</h3>
-            <p>Use goals and feedback to keep moving forward.</p>
-          </div>
+        <div class="grid">
+          <article class="card">
+            <span class="tag">ONE-ON-ONE</span>
+            <h3>Individual Session</h3>
+            <div class="price">$45 <small>/ 60 minutes</small></div>
+            <ul><li>Individual training focus</li><li>Movement and skill development</li><li>Goals-based session plan</li></ul>
+            <a class="button" href="#booking" data-select="Individual session">Request Session</a>
+          </article>
+          <article class="card">
+            <span class="tag">SAVE WITH A PACKAGE</span>
+            <h3>Four-Session Package</h3>
+            <div class="price">$160 <small>/ 4 sessions</small></div>
+            <ul><li>Four 60-minute sessions</li><li>Consistent training schedule</li><li>Focus on ongoing development</li></ul>
+            <a class="button" href="#booking" data-select="Four-session package">Request Package</a>
+          </article>
+          <article class="card">
+            <span class="tag">TRAIN TOGETHER</span>
+            <h3>Small Group</h3>
+            <div class="price">$25 <small>/ athlete / session</small></div>
+            <ul><li>2–6 athletes</li><li>Shared drills and challenges</li><li>Teamwork and accountability</li></ul>
+            <a class="button" href="#booking" data-select="Small-group training">Request Group</a>
+          </article>
+          <article class="card">
+            <span class="tag">TEAM TRAINING</span>
+            <h3>Team Practice</h3>
+            <div class="price">$150 <small>/ 60 minutes</small></div>
+            <ul><li>Up to 15 athletes</li><li>Team-oriented practice plan</li><li>Group movement and agility drills</li></ul>
+            <a class="button" href="#booking" data-select="Team practice">Request Team Practice</a>
+          </article>
+          <article class="card">
+            <span class="tag">SKILL APPLICATION</span>
+            <h3>Sport-Specific Session</h3>
+            <div class="price">$45 <small>/ 60 minutes</small></div>
+            <ul><li>Sport-relevant movement</li><li>Agility and coordination</li><li>Individual training focus</li></ul>
+            <a class="button" href="#booking" data-select="Sport-specific session">Request Session</a>
+          </article>
+          <article class="card">
+            <span class="tag">FOUNDATION</span>
+            <h3>Strength & Conditioning</h3>
+            <div class="price">$45 <small>/ 60 minutes</small></div>
+            <ul><li>Strength development</li><li>Movement technique</li><li>Progressive training</li></ul>
+            <a class="button" href="#booking" data-select="Strength and conditioning">Request Session</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section id="booking" class="booking">
       <div class="container">
-        <div class="cta">
-          <p class="eyebrow">Your Next Chapter Starts Here</p>
-          <h2>Ready to get to work?</h2>
-          <p>Explore the training options and find the pathway that best fits your goals.</p>
-          <div class="button-row">
-            <a class="button" href="sports-performance.html">View Training Programs</a>
-          </div>
+        <div class="heading">
+          <div class="eyebrow">Your next step</div>
+          <h2>Request a training session.</h2>
+          <p>Choose a training option and tell us about your goals. This demonstration form does not send or store your information.</p>
         </div>
+
+        <form id="booking-form">
+          <div class="formgrid">
+            <div class="field">
+              <label for="name">Full name *</label>
+              <input id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email address *</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="sport">Sport or activity *</label>
+              <select id="sport" name="sport" required>
+                <option value="">Choose a sport</option>
+                <option>Baseball</option><option>Softball</option>
+                <option>Basketball</option><option>Football</option>
+                <option>Soccer</option><option>Volleyball</option>
+                <option>Track & Field</option><option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="training">Training option *</label>
+              <select id="training" name="training" required>
+                <option value="">Choose training</option>
+                <option>Individual session — $45 / 60 minutes</option>
+                <option>Four-session package — $160</option>
+                <option>Small-group training — $25 / athlete</option>
+                <option>Team practice — $150 / 60 minutes</option>
+                <option>Sport-specific session — $45 / 60 minutes</option>
+                <option>Strength and conditioning — $45 / 60 minutes</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="athletes">Number of athletes</label>
+              <select id="athletes" name="athletes">
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6</option>
+                <option>7–15</option><option>More than 15</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="level">Experience level</label>
+              <select id="level" name="level">
+                <option value="">Choose experience level</option>
+                <option>Beginner</option><option>Intermediate</option>
+                <option>Advanced</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Preferred date</label>
+              <input id="date" name="date" type="date">
+            </div>
+            <div class="field">
+              <label for="time">Preferred time</label>
+              <select id="time" name="time">
+                <option value="">Choose a time</option>
+                <option>Morning</option><option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="goals">What would you like to work on?</label>
+              <textarea id="goals" name="goals" placeholder="Tell us about your sport, goals, and preferred training focus."></textarea>
+            </div>
+            <div class="field full">
+              <button class="button" type="submit">Preview Booking Request</button>
+              <p class="note">Educational demo only. No information is transmitted or saved.</p>
+              <p id="form-status" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <a class="logo" href="index.html" aria-label="Hawkeye Performance home">
-        <span class="logo-mark" aria-hidden="true">ϟ</span>
-        <span class="logo-text">
-          <strong>HAWKEYE</strong>
-          <span>PERFORMANCE</span>
-        </span>
-      </a>
+  <footer>
+    <div class="container">
+      <p>HAWKEYE PERFORMANCE · Train with purpose.</p>
       <p>This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p>
-      <div class="footer-links">
-        <a href="sports-performance.html">Sports Performance</a>
-        <a href="sport-specific.html">Sport-Specific</a>
-        <a href="strength-conditioning.html">Strength &amp; Conditioning</a>
-      </div>
     </div>
   </footer>
+  <script src="site.js"></script>
 </body>
 </html>
