@@ -1,185 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore progressive strength and conditioning training at Hawkeye Performance.">
-  <title>Strength &amp; Conditioning | Hawkeye Performance</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strength & Conditioning for Athletes in Iowa City | Hawkeye Performance</title>
+<meta name="description" content="Explore sample strength and conditioning sessions focused on movement technique, progressive training, and athletic development.">
+<style>
+:root{--bg:#101216;--panel:#191d24;--text:#f5f7fa;--muted:#aab2bf;--line:#343b47;--accent:#c4a1ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Arial,sans-serif}
+a{color:inherit;text-decoration:none}.notice{text-align:center;background:#252a32;padding:9px;font-size:12px}
+header{position:sticky;top:0;background:#101216f5;border-bottom:1px solid var(--line);z-index:5}
+nav,.container{width:min(1100px,90%);margin:auto}nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.links{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;font-weight:bold}.links a:hover{color:var(--accent)}
+.brand{font-weight:900}.mark{display:inline-grid;place-items:center;width:38px;height:38px;background:var(--accent);color:#101216;border-radius:8px;margin-right:8px;font-size:22px}
+.hero{padding:75px 0;background:radial-gradient(ellipse at 90% 10%,#c4a1ff20,transparent 50%)}
+.eyebrow,.tag{color:var(--accent);font-size:12px;font-weight:900;letter-spacing:2px}
+h1{font-size:clamp(40px,6vw,70px);line-height:1.05;margin:15px 0}h2{font-size:clamp(28px,4vw,40px)}p,li{color:var(--muted)}
+section{padding:55px 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:14px}
+.price{font-size:29px;font-weight:900;color:var(--accent);margin:10px 0}.price small{font-size:13px;color:var(--muted);font-weight:normal}
+.button{display:inline-block;padding:12px 17px;border-radius:8px;background:var(--accent);color:#101216;font-weight:bold;border:0;cursor:pointer}
+.secondary{background:transparent;border:1px solid var(--line);color:var(--text)}
+.booking{background:#151920;border-block:1px solid var(--line)}
+footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+</style>
 </head>
-<body class="purple">
-  <div class="notice">
-    This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
-  </div>
-
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a class="logo" href="index.html" aria-label="Hawkeye Performance home">
-        <span class="logo-mark" aria-hidden="true">ϟ</span>
-        <span class="logo-text">
-          <strong>HAWKEYE</strong>
-          <span>PERFORMANCE</span>
-        </span>
-      </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="sports-performance.html">Sports Performance</a>
-        <a href="sport-specific.html">Sport-Specific</a>
-        <a href="strength-conditioning.html" aria-current="page">Strength &amp; Conditioning</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Strength &amp; Conditioning · Build Your Foundation</p>
-        <h1>Strong is built, <span class="accent-text">not given.</span></h1>
-        <p class="hero-copy">
-          Strength develops through consistency, technique, and progressive
-          training. Build a foundation that supports your athletic goals and
-          helps you approach every session with purpose.
-        </p>
-        <div class="button-row">
-          <a class="button" href="#framework">Explore the Framework</a>
-          <a class="button secondary" href="sports-performance.html">Sports Performance</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">The Building Blocks</p>
-          <h2>Progress starts with <span class="accent-text">the fundamentals.</span></h2>
-          <p>
-            Strength and conditioning brings together resistance training,
-            movement quality, work capacity, and recovery to support
-            long-term athletic development.
-          </p>
-        </div>
-
-        <div class="grid">
-          <article class="card">
-            <div class="card-number">01 / TECHNIQUE</div>
-            <h3>Move well</h3>
-            <p>Learn appropriate exercise technique and establish sound movement habits.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-number">02 / STRENGTH</div>
-            <h3>Build capacity</h3>
-            <p>Develop strength through exercises suited to your goals and experience.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-number">03 / CONSISTENCY</div>
-            <h3>Keep progressing</h3>
-            <p>Build repeatable training habits and progress at an appropriate pace.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="framework">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">The Training Framework</p>
-          <h2>Four steps toward <span class="accent-text">lasting progress.</span></h2>
-          <p>
-            A structured approach helps athletes understand their priorities
-            and work toward improvement one session at a time.
-          </p>
-        </div>
-
-        <div class="steps">
-          <article class="step">
-            <div class="step-number">STEP 01</div>
-            <h3>Establish</h3>
-            <p>Set goals, review experience, and focus on foundational technique.</p>
-          </article>
-          <article class="step">
-            <div class="step-number">STEP 02</div>
-            <h3>Develop</h3>
-            <p>Build strength and movement competency through consistent practice.</p>
-          </article>
-          <article class="step">
-            <div class="step-number">STEP 03</div>
-            <h3>Progress</h3>
-            <p>Adjust training demands as technique, confidence, and capacity improve.</p>
-          </article>
-          <article class="step">
-            <div class="step-number">STEP 04</div>
-            <h3>Evaluate</h3>
-            <p>Review progress and identify priorities for the next training phase.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Train With Intention</p>
-          <h2>It's not just about lifting more. It's about <span class="accent-text">getting better.</span></h2>
-          <p class="hero-copy">
-            An effective training plan considers the athlete as a whole.
-            Exercise selection, training volume, technique, and recovery all
-            contribute to a thoughtful approach to development.
-          </p>
-        </div>
-        <div class="feature-list">
-          <div class="feature">
-            <h3>Individual goals</h3>
-            <p>Build a plan around current needs and longer-term objectives.</p>
-          </div>
-          <div class="feature">
-            <h3>Quality technique</h3>
-            <p>Prioritize controlled, appropriate movement before adding difficulty.</p>
-          </div>
-          <div class="feature">
-            <h3>Progressive training</h3>
-            <p>Make changes gradually as the athlete develops.</p>
-          </div>
-          <div class="feature">
-            <h3>Consistent effort</h3>
-            <p>Focus on repeatable sessions instead of expecting overnight results.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="cta">
-          <p class="eyebrow">Put Your Foundation to Work</p>
-          <h2>Ready to take the next step?</h2>
-          <p>Explore sports performance to see how strength and conditioning can complement broader athletic development.</p>
-          <div class="button-row">
-            <a class="button" href="sports-performance.html">Explore Sports Performance</a>
-            <a class="button secondary" href="index.html">Back to Home</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <a class="logo" href="index.html" aria-label="Hawkeye Performance home">
-        <span class="logo-mark" aria-hidden="true">ϟ</span>
-        <span class="logo-text">
-          <strong>HAWKEYE</strong>
-          <span>PERFORMANCE</span>
-        </span>
-      </a>
-      <p>This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="sports-performance.html">Sports Performance</a>
-        <a href="sport-specific.html">Sport-Specific</a>
-      </div>
-    </div>
-  </footer>
+<body>
+<div class="notice">Fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. Not a real business.</div>
+<header><nav>
+<a class="brand" href="index.html"><span class="mark">ϟ</span> HAWKEYE PERFORMANCE</a>
+<div class="links">
+<a href="index.html">Home</a><a href="sports-performance.html">Sports Performance</a><a href="sport-specific.html">Sport-Specific</a><a href="strength-conditioning.html">Strength & Conditioning</a><a href="index.html#booking">Book a Session</a>
+</div></nav></header>
+<main>
+<section class="hero"><div class="container">
+<div class="eyebrow">Build your foundation</div>
+<h1>STRENGTH FOR WHAT'S <span style="color:var(--accent)">NEXT.</span></h1>
+<p>Strength and conditioning for athletes emphasizes progressive training, movement technique, consistency, and long-term athletic development.</p>
+<a class="button" href="#options">View Sessions</a>
+<a class="button secondary" href="index.html#booking">Request Training</a>
+</div></section>
+<section id="options"><div class="container">
+<h2>Strength & conditioning options</h2>
+<div class="grid">
+<article class="card"><span class="tag">INDIVIDUAL</span><h3>Strength Session</h3><div class="price">$45 <small>/ 60 minutes</small></div><p>A sample one-on-one session focused on strength development and movement technique.</p><ul><li>Individual training focus</li><li>Progressive exercise selection</li><li>Technique-oriented practice</li></ul><a class="button" href="index.html#booking" data-select="Strength and conditioning">Request Session</a></article>
+<article class="card"><span class="tag">FOUR SESSIONS</span><h3>Build Consistency</h3><div class="price">$160 <small>/ package</small></div><p>A sample four-session package for athletes who want a consistent training routine.</p><ul><li>Four 60-minute sessions</li><li>Consistent training focus</li><li>Progress review</li></ul><a class="button" href="index.html#booking" data-select="Four-session package">Request Package</a></article>
+<article class="card"><span class="tag">SMALL GROUP</span><h3>Strength Together</h3><div class="price">$25 <small>/ athlete</small></div><p>Small-group training for 2–6 athletes with shared movement and strength goals.</p><ul><li>Group-based training</li><li>Shared accountability</li><li>Sample 60-minute session</li></ul><a class="button" href="index.html#booking" data-select="Small-group training">Request Group</a></article>
+</div></div></section>
+<section><div class="container">
+<h2>What matters in training</h2>
+<div class="grid">
+<article class="card"><h3>Technique first</h3><p>Practice controlled movement patterns appropriate to the athlete's experience.</p></article>
+<article class="card"><h3>Progress over time</h3><p>Use consistent training to build skills and work toward individual goals.</p></article>
+<article class="card"><h3>Training that fits</h3><p>Consider sport, experience, and training goals when choosing an option.</p></article>
+</div></div></section>
+<section class="booking"><div class="container">
+<h2>Build your strength foundation.</h2>
+<p>Use the homepage booking form to request a sample session or package.</p>
+<a class="button" href="index.html#booking" data-select="Strength and conditioning">Request a Session</a>
+</div></section>
+</main>
+<footer><div class="container">HAWKEYE PERFORMANCE · Fictional MKTG:4400 project at the University of Iowa.</div></footer>
+<script src="site.js"></script>
 </body>
 </html>
