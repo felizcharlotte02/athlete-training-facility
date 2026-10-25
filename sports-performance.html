@@ -1,175 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore sports performance training focused on speed, power, agility, and athletic development.">
-  <title>Sports Performance | Hawkeye Performance</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Performance Training in Iowa City | Hawkeye Performance</title>
+<meta name="description" content="Explore sports performance training focused on speed, agility, power, coordination, and athletic development.">
+<style>
+:root{--bg:#101216;--panel:#191d24;--text:#f5f7fa;--muted:#aab2bf;--line:#343b47;--accent:#ff783f}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Arial,sans-serif}
+a{color:inherit;text-decoration:none}.notice{text-align:center;background:#252a32;padding:9px;font-size:12px}
+header{position:sticky;top:0;background:#101216f5;border-bottom:1px solid var(--line);z-index:5}
+nav,.container{width:min(1100px,90%);margin:auto}nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.links{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;font-weight:bold}.links a:hover{color:var(--accent)}
+.brand{font-weight:900}.mark{display:inline-grid;place-items:center;width:38px;height:38px;background:var(--accent);color:#101216;border-radius:8px;margin-right:8px;font-size:22px}
+.hero{padding:75px 0;background:radial-gradient(ellipse at 90% 10%,#ff783f20,transparent 50%)}
+.eyebrow,.tag{color:var(--accent);font-size:12px;font-weight:900;letter-spacing:2px}
+h1{font-size:clamp(40px,6vw,70px);line-height:1.05;margin:15px 0}h2{font-size:clamp(28px,4vw,40px)}p,li{color:var(--muted)}
+section{padding:55px 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:14px}
+.price{font-size:29px;font-weight:900;color:var(--accent);margin:10px 0}.price small{font-size:13px;color:var(--muted);font-weight:normal}
+.button{display:inline-block;padding:12px 17px;border-radius:8px;background:var(--accent);color:#101216;font-weight:bold;border:0;cursor:pointer}
+.secondary{background:transparent;border:1px solid var(--line);color:var(--text)}
+.booking{background:#151920;border-block:1px solid var(--line)}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:6px}.full{grid-column:1/-1}
+label{font-size:13px;font-weight:bold}input,select,textarea{width:100%;padding:12px;background:#101318;color:var(--text);border:1px solid var(--line);border-radius:8px;font:inherit}
+textarea{min-height:100px}footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:760px){.grid,.formgrid{grid-template-columns:1fr}.full{grid-column:auto}}
+</style>
 </head>
-<body class="orange">
-  <div class="notice">
-    This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
-  </div>
-
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a class="logo" href="index.html" aria-label="Hawkeye Performance home">
-        <span class="logo-mark" aria-hidden="true">ϟ</span>
-        <span class="logo-text">
-          <strong>HAWKEYE</strong>
-          <span>PERFORMANCE</span>
-        </span>
-      </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="sports-performance.html" aria-current="page">Sports Performance</a>
-        <a href="sport-specific.html">Sport-Specific</a>
-        <a href="strength-conditioning.html">Strength &amp; Conditioning</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Sports Performance · Train With Purpose</p>
-        <h1>Make your next move <span class="accent-text">count.</span></h1>
-        <p class="hero-copy">
-          Athletic performance is about more than working harder. Develop the
-          physical tools to move with control, react with confidence, and compete
-          with purpose.
-        </p>
-        <div class="button-row">
-          <a class="button" href="#training-focus">Explore Training Focus</a>
-          <a class="button secondary" href="sport-specific.html">Find Sport-Specific Training</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Performance Fundamentals</p>
-          <h2>Develop the qualities that <span class="accent-text">set you apart.</span></h2>
-          <p>
-            A well-rounded performance approach targets the physical skills
-            athletes use across training, practice, and competition.
-          </p>
-        </div>
-
-        <div class="stat-grid">
-          <div class="stat">
-            <strong>Speed</strong>
-            <span>Accelerate efficiently and work on movement mechanics.</span>
-          </div>
-          <div class="stat">
-            <strong>Power</strong>
-            <span>Develop the ability to produce force with intent.</span>
-          </div>
-          <div class="stat">
-            <strong>Agility</strong>
-            <span>Practice changing direction and responding to movement.</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="training-focus">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">A Focused Approach</p>
-          <h2>Train with a reason behind <span class="accent-text">every rep.</span></h2>
-          <p class="hero-copy">
-            Training can be adapted to an athlete's experience, goals, and
-            development needs. The focus is on purposeful practice, sound
-            technique, and steady progress.
-          </p>
-        </div>
-        <div class="feature-list">
-          <div class="feature">
-            <h3>Movement quality</h3>
-            <p>Practice efficient movement patterns and body control.</p>
-          </div>
-          <div class="feature">
-            <h3>Explosive movement</h3>
-            <p>Work on producing force through appropriate drills and exercises.</p>
-          </div>
-          <div class="feature">
-            <h3>Reaction and control</h3>
-            <p>Build coordination while practicing acceleration and direction changes.</p>
-          </div>
-          <div class="feature">
-            <h3>Progressive development</h3>
-            <p>Adjust training demands as technique and experience develop.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Your Training Path</p>
-          <h2>From preparation to <span class="accent-text">performance.</span></h2>
-        </div>
-
-        <div class="steps">
-          <article class="step">
-            <div class="step-number">STEP 01</div>
-            <h3>Set goals</h3>
-            <p>Identify the areas you want to improve.</p>
-          </article>
-          <article class="step">
-            <div class="step-number">STEP 02</div>
-            <h3>Build a plan</h3>
-            <p>Choose exercises and drills that fit your goals.</p>
-          </article>
-          <article class="step">
-            <div class="step-number">STEP 03</div>
-            <h3>Put in the work</h3>
-            <p>Practice with focus, consistency, and good technique.</p>
-          </article>
-          <article class="step">
-            <div class="step-number">STEP 04</div>
-            <h3>Review progress</h3>
-            <p>Use feedback to identify the next opportunity to improve.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="cta">
-          <p class="eyebrow">Take the Next Step</p>
-          <h2>Make your training more intentional.</h2>
-          <p>Explore sport-specific training to connect athletic development with the demands of your sport.</p>
-          <div class="button-row">
-            <a class="button" href="sport-specific.html">Explore Sport-Specific Training</a>
-            <a class="button secondary" href="index.html">Back to Home</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <a class="logo" href="index.html" aria-label="Hawkeye Performance home">
-        <span class="logo-mark" aria-hidden="true">ϟ</span>
-        <span class="logo-text">
-          <strong>HAWKEYE</strong>
-          <span>PERFORMANCE</span>
-        </span>
-      </a>
-      <p>This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="sport-specific.html">Sport-Specific</a>
-        <a href="strength-conditioning.html">Strength &amp; Conditioning</a>
-      </div>
-    </div>
-  </footer>
+<body>
+<div class="notice">Fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. Not a real business.</div>
+<header><nav>
+<a class="brand" href="index.html"><span class="mark">ϟ</span> HAWKEYE PERFORMANCE</a>
+<div class="links">
+<a href="index.html">Home</a><a href="sports-performance.html">Sports Performance</a><a href="sport-specific.html">Sport-Specific</a><a href="strength-conditioning.html">Strength & Conditioning</a><a href="index.html#booking">Book a Session</a>
+</div></nav></header>
+<main>
+<section class="hero"><div class="container">
+<div class="eyebrow">Speed · Agility · Power</div>
+<h1>TRAIN FOR YOUR <span style="color:var(--accent)">NEXT LEVEL.</span></h1>
+<p>Sports performance training focuses on the athletic qualities that help athletes move with purpose: acceleration, agility, coordination, power, and efficient movement.</p>
+<p>Explore a fictional training pathway built around practice, progression, and individual goals.</p>
+<a class="button" href="#sessions">Explore Sessions</a>
+<a class="button secondary" href="index.html#booking">Request Training</a>
+</div></section>
+<section id="sessions"><div class="container">
+<h2>Sports performance sessions</h2>
+<div class="grid">
+<article class="card"><span class="tag">INDIVIDUAL</span><h3>Performance Session</h3><div class="price">$45 <small>/ 60 minutes</small></div><p>One-on-one work focused on movement, acceleration, coordination, and personal training goals.</p><ul><li>Individual focus</li><li>Movement and agility drills</li><li>60-minute sample session</li></ul><a class="button" href="index.html#booking" data-select="Individual session">Request Session</a></article>
+<article class="card"><span class="tag">SMALL GROUP</span><h3>Performance Pod</h3><div class="price">$25 <small>/ athlete</small></div><p>Train with 2–6 athletes in a shared session built around athletic movement and accountability.</p><ul><li>Small-group drills</li><li>Shared training goals</li><li>Sample session duration: 60 minutes</li></ul><a class="button" href="index.html#booking" data-select="Small-group training">Request Group</a></article>
+<article class="card"><span class="tag">TEAM</span><h3>Team Performance</h3><div class="price">$150 <small>/ 60 minutes</small></div><p>A sample team practice option for groups of up to 15 athletes.</p><ul><li>Team-oriented movement</li><li>Speed and agility focus</li><li>Practice-style structure</li></ul><a class="button" href="index.html#booking" data-select="Team practice">Request Practice</a></article>
+</div></div></section>
+<section><div class="container">
+<h2>What a session can include</h2>
+<div class="grid">
+<article class="card"><h3>01. Movement preparation</h3><p>Warm-up activities and movement patterns that prepare athletes for the session.</p></article>
+<article class="card"><h3>02. Skill development</h3><p>Acceleration, change of direction, balance, and coordination drills appropriate to the training focus.</p></article>
+<article class="card"><h3>03. Progress review</h3><p>Review the session focus and identify areas to continue practicing.</p></article>
+</div></div></section>
+<section class="booking" id="booking"><div class="container">
+<h2>Request a performance session</h2><p>Use the booking request form on the homepage to select your sport, training type, and preferred schedule.</p>
+<a class="button" href="index.html#booking" data-select="Individual session">Open Booking Form</a>
+</div></section>
+</main>
+<footer><div class="container">HAWKEYE PERFORMANCE · Fictional MKTG:4400 project at the University of Iowa.</div></footer>
+<script src="site.js"></script>
 </body>
 </html>
