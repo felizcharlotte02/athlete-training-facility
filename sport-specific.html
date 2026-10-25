@@ -1,191 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore sport-specific athletic training and movement development at Hawkeye Performance.">
-  <title>Sport-Specific Training | Hawkeye Performance</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sport-Specific Training in Iowa City | Hawkeye Performance</title>
+<meta name="description" content="Explore fictional sport-specific training options for baseball, softball, basketball, and other athletes in Iowa City.">
+<style>
+:root{--bg:#101216;--panel:#191d24;--text:#f5f7fa;--muted:#aab2bf;--line:#343b47;--accent:#64c8ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Arial,sans-serif}
+a{color:inherit;text-decoration:none}.notice{text-align:center;background:#252a32;padding:9px;font-size:12px}
+header{position:sticky;top:0;background:#101216f5;border-bottom:1px solid var(--line);z-index:5}
+nav,.container{width:min(1100px,90%);margin:auto}nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.links{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;font-weight:bold}.links a:hover{color:var(--accent)}
+.brand{font-weight:900}.mark{display:inline-grid;place-items:center;width:38px;height:38px;background:var(--accent);color:#101216;border-radius:8px;margin-right:8px;font-size:22px}
+.hero{padding:75px 0;background:radial-gradient(ellipse at 90% 10%,#64c8ff20,transparent 50%)}
+.eyebrow,.tag{color:var(--accent);font-size:12px;font-weight:900;letter-spacing:2px}
+h1{font-size:clamp(40px,6vw,70px);line-height:1.05;margin:15px 0}h2{font-size:clamp(28px,4vw,40px)}p,li{color:var(--muted)}
+section{padding:55px 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:14px}
+.price{font-size:29px;font-weight:900;color:var(--accent);margin:10px 0}.price small{font-size:13px;color:var(--muted);font-weight:normal}
+.button{display:inline-block;padding:12px 17px;border-radius:8px;background:var(--accent);color:#101216;font-weight:bold;border:0;cursor:pointer}
+.secondary{background:transparent;border:1px solid var(--line);color:var(--text)}
+.booking{background:#151920;border-block:1px solid var(--line)}
+footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+</style>
 </head>
-<body class="blue">
-  <div class="notice">
-    This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.
-  </div>
-
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a class="logo" href="index.html" aria-label="Hawkeye Performance home">
-        <span class="logo-mark" aria-hidden="true">ϟ</span>
-        <span class="logo-text">
-          <strong>HAWKEYE</strong>
-          <span>PERFORMANCE</span>
-        </span>
-      </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="sports-performance.html">Sports Performance</a>
-        <a href="sport-specific.html" aria-current="page">Sport-Specific</a>
-        <a href="strength-conditioning.html">Strength &amp; Conditioning</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Sport-Specific Training · Play With Purpose</p>
-        <h1>Train for <span class="accent-text">your sport.</span></h1>
-        <p class="hero-copy">
-          Every sport places different demands on an athlete. Focus your
-          development on the movements, coordination, and physical qualities
-          that matter in your game.
-        </p>
-        <div class="button-row">
-          <a class="button" href="#sports">Explore Training Focuses</a>
-          <a class="button secondary" href="sports-performance.html">General Performance</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="sports">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Different Sports. Different Demands.</p>
-          <h2>Connect your training to <span class="accent-text">the game.</span></h2>
-          <p>
-            Sport-specific training applies general athletic development to
-            common movement patterns and skills associated with different
-            types of sport.
-          </p>
-        </div>
-
-        <div class="grid">
-          <article class="card">
-            <div class="card-number">01 / FIELD SPORTS</div>
-            <h3>Field Sports</h3>
-            <p>
-              Practice acceleration, deceleration, changes of direction, and
-              repeated movement for sports such as soccer and football.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-number">02 / COURT SPORTS</div>
-            <h3>Court Sports</h3>
-            <p>
-              Focus on lateral movement, balance, jumping mechanics, and
-              quick transitions for sports such as basketball and volleyball.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-number">03 / BAT-AND-BALL SPORTS</div>
-            <h3>Bat-and-Ball Sports</h3>
-            <p>
-              Develop coordination, rotational movement, acceleration, and
-              control relevant to sports such as baseball and softball.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Training That Connects</p>
-          <h2>Build the foundation. Practice the <span class="accent-text">application.</span></h2>
-          <p class="hero-copy">
-            Sport-specific work complements broader strength and performance
-            training. The goal is to choose appropriate exercises and drills
-            that align with the athlete's needs and experience.
-          </p>
-          <a class="button" href="strength-conditioning.html">Build Your Foundation</a>
-        </div>
-        <div class="feature-list">
-          <div class="feature">
-            <h3>Movement patterns</h3>
-            <p>Practice movements commonly used in your sport.</p>
-          </div>
-          <div class="feature">
-            <h3>Coordination and control</h3>
-            <p>Work on body awareness, balance, and efficient transitions.</p>
-          </div>
-          <div class="feature">
-            <h3>Position and role</h3>
-            <p>Consider the unique movement demands associated with your role.</p>
-          </div>
-          <div class="feature">
-            <h3>Individual development</h3>
-            <p>Adapt training to your goals, experience, and current priorities.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">How It Comes Together</p>
-          <h2>A purposeful plan, <span class="accent-text">step by step.</span></h2>
-        </div>
-
-        <div class="steps">
-          <article class="step">
-            <div class="step-number">STEP 01</div>
-            <h3>Identify your needs</h3>
-            <p>Consider your sport, position, experience, and goals.</p>
-          </article>
-          <article class="step">
-            <div class="step-number">STEP 02</div>
-            <h3>Choose your focus</h3>
-            <p>Prioritize the movement patterns you want to develop.</p>
-          </article>
-          <article class="step">
-            <div class="step-number">STEP 03</div>
-            <h3>Practice with purpose</h3>
-            <p>Use suitable drills and exercises with good technique.</p>
-          </article>
-          <article class="step">
-            <div class="step-number">STEP 04</div>
-            <h3>Adapt and progress</h3>
-            <p>Review your progress and adjust the plan when needed.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="cta">
-          <p class="eyebrow">Build Your Complete Game</p>
-          <h2>Every skill starts with a foundation.</h2>
-          <p>Explore strength and conditioning to support your sport-specific development.</p>
-          <div class="button-row">
-            <a class="button" href="strength-conditioning.html">Explore Strength &amp; Conditioning</a>
-            <a class="button secondary" href="index.html">Back to Home</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <a class="logo" href="index.html" aria-label="Hawkeye Performance home">
-        <span class="logo-mark" aria-hidden="true">ϟ</span>
-        <span class="logo-text">
-          <strong>HAWKEYE</strong>
-          <span>PERFORMANCE</span>
-        </span>
-      </a>
-      <p>This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="sports-performance.html">Sports Performance</a>
-        <a href="strength-conditioning.html">Strength &amp; Conditioning</a>
-      </div>
-    </div>
-  </footer>
+<body>
+<div class="notice">Fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. Not a real business.</div>
+<header><nav>
+<a class="brand" href="index.html"><span class="mark">ϟ</span> HAWKEYE PERFORMANCE</a>
+<div class="links">
+<a href="index.html">Home</a><a href="sports-performance.html">Sports Performance</a><a href="sport-specific.html">Sport-Specific</a><a href="strength-conditioning.html">Strength & Conditioning</a><a href="index.html#booking">Book a Session</a>
+</div></nav></header>
+<main>
+<section class="hero"><div class="container">
+<div class="eyebrow">Train for your sport</div>
+<h1>YOUR SPORT. YOUR <span style="color:var(--accent)">TRAINING.</span></h1>
+<p>Sport-specific training connects athletic development to the movement demands of individual sports. Explore sample training focuses for field sports, court sports, and bat-and-ball sports.</p>
+<a class="button" href="#options">Explore Options</a>
+<a class="button secondary" href="index.html#booking">Request Training</a>
+</div></section>
+<section id="options"><div class="container">
+<h2>Explore sport-specific training</h2>
+<div class="grid">
+<article class="card"><span class="tag">BASEBALL & SOFTBALL</span><h3>Bat-and-Ball Sports</h3><div class="price">$45 <small>/ 60 minutes</small></div><p>Sample sessions focused on coordination, acceleration, balance, and controlled changes of direction.</p><a class="button" href="index.html#booking" data-select="Sport-specific session">Request Session</a></article>
+<article class="card"><span class="tag">BASKETBALL & VOLLEYBALL</span><h3>Court Sports</h3><div class="price">$45 <small>/ 60 minutes</small></div><p>Explore movement patterns, agility, body control, and repeated directional changes.</p><a class="button" href="index.html#booking" data-select="Sport-specific session">Request Session</a></article>
+<article class="card"><span class="tag">SOCCER & FOOTBALL</span><h3>Field Sports</h3><div class="price">$45 <small>/ 60 minutes</small></div><p>Sample training focuses on acceleration, coordination, movement efficiency, and agility.</p><a class="button" href="index.html#booking" data-select="Sport-specific session">Request Session</a></article>
+</div></div></section>
+<section><div class="container">
+<h2>How a session is structured</h2>
+<div class="grid">
+<article class="card"><h3>01. Identify your sport</h3><p>Choose your sport and describe the movements or skills you want to develop.</p></article>
+<article class="card"><h3>02. Select a focus</h3><p>Choose a sample training focus, such as agility, coordination, or movement technique.</p></article>
+<article class="card"><h3>03. Request a session</h3><p>Submit your preferred training type and schedule through the homepage form.</p></article>
+</div></div></section>
+<section class="booking"><div class="container">
+<h2>Ready to choose your focus?</h2>
+<p>Select your sport and preferred training option in the booking request form.</p>
+<a class="button" href="index.html#booking" data-select="Sport-specific session">Request a Session</a>
+</div></section>
+</main>
+<footer><div class="container">HAWKEYE PERFORMANCE · Fictional MKTG:4400 project at the University of Iowa.</div></footer>
+<script src="site.js"></script>
 </body>
 </html>
